@@ -1,22 +1,23 @@
 {
-    "name": "ansible-api",
-    "version": "1.0.0",
-    "description": "api for running ansible commands via REST",
-    "main": "index.js",
-    "scripts": {
-      "start": "node index.mjs"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/noamma/ansible-api.git"
-    },
-    "author": "Marko Development Technologies",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/noamma/ansible-api/issues"
-    },
-    "homepage": "https://github.com/noamma/ansible-api#readme",
-    "dependencies": {
-      "express": "^4.18.2"
-    }
+  "name": "ansible-api",
+  "version": "1.0.0",
+  "description": "api for running ansible commands via REST",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noamma/ansible-api.git"
+  },
+  "author": "Marko Development Technologies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noamma/ansible-api/issues"
+  },
+  "homepage": "https://github.com/noamma/ansible-api#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
   }
+}
