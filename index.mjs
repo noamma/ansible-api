@@ -5,11 +5,11 @@ import dotenv  from 'dotenv';
 dotenv.config();
 const ansible_path = process.env.ANSIBLE_PATH;
 const result = async(cmd, response) => {
-  const arr  = cmd.split(" ");
-  const _exec = arr.shift();
-  const param = arr;
+  //const arr  = cmd.split(" ");
+  //const _exec = arr.shift();
+  //const param = arr;
 
-    const ls = spawn(_exec, {cmd:ansible_path},param);
+    const ls = spawn(cmd, {cwd:`${ansible_path}`});
 
     ls.stdout.on("data", data => {
         response.write(data);
