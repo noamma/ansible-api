@@ -3,7 +3,7 @@ import { spawn } from 'child_process';
 import dotenv  from 'dotenv';
 
 dotenv.config();
-const ansible_path = process.env.ANSIBLE_PATH
+const ansible_path = process.env.ANSIBLE_PATH;
 const result = async(cmd, response) => {
   const arr  = cmd.split(" ");
   const _exec = arr.shift();
