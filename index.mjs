@@ -9,7 +9,7 @@ const result = async(cmd, response) => {
   const _exec = arr.shift();
   const param = arr;
 
-    const ls = spawn(_exec, ansible_path,param);
+    const ls = spawn(_exec, {cmd:ansible_path},param);
 
     ls.stdout.on("data", data => {
         response.write(data);
